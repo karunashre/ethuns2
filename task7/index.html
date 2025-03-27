@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Train Animation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                background: #f2f2f2;
+            }
+
+            h2 {
+                color: #00008b;
+                margin: 20px 0;
+            }
+
+            .container {
+                margin: 40px auto;
+            }
+
+            .train-box {
+                width: 100%;
+                max-width: 1000px;
+                height: 300px;
+                overflow: hidden;
+                position: relative;
+                margin: 0 auto;
+                background: #fff;
+                border: 1px solid #ccc;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            #train {
+                width: 300px;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+
+            .btn-container {
+                margin-top: 20px;
+            }
+
+            button {
+                padding: 10px 20px;
+                margin: 10px;
+                font-size: 16px;
+                color: white;
+                background: #4CAF50;
+                border: none;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                background: #45a049;
+            }
+
+            button.stop {
+                background: #f44336;
+            }
+
+            button.stop:hover {
+                background: #d32f2f;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2>🚂 Click the following buttons to handle animation 🚂</h2>
+
+        <div class="container">
+            <div class="train-box">
+                <img src="train.png" alt="Train" id="train">
+            </div>
+
+            <div class="btn-container">
+                <button id="startBtn">Start</button>
+                <button id="stopBtn" class="stop">Stop</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
